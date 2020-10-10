@@ -12,7 +12,7 @@ c)0(n log n)
 
 ## Exercise II
 
-O(n)
+vvv O(n) vvv
 
 start is 0, end is n
 target is not breaking an egg

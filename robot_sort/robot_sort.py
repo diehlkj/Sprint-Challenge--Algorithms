@@ -95,8 +95,50 @@ class SortingRobot:
     def sort(self):
         """
         Sort the robot's list.
+        ? can_move_right
+        ? can_move_left
+        ? move_right
+        ? move_left
+        ? swap_item
+        ? compare_item
+        ? set_light_on
+        ? set_light_off
+        ? light_is_on
         """
-        # Fill this out
+        
+        # ? for 'index' of 0 to length of input array
+        for i in range(arr_len):
+            
+            # ? loop again for each 'index' of 0 to length of input array - outer index - 1.
+            # ? Every time 'i' increases, it limits the number of indexes in 'arr' to be looked through by 1.
+            
+            for j in range(arr_len - i - 1):
+                if arr[j] > arr[j + 1]: # * if self.compare_item() == 1:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j] # * self.swap_item()
+        return arr
+        
+        # ? if self.compare_item() is None:
+            # ? self.swap_item()
+        
+        # ? while self.light_is_on() is False:
+            # ? if self.can_move_right() is true:
+                # ? if self.compare_item() == 1:
+                    # ? self.swap_item()
+                # ? self.move_right()
+            # ? else:
+                # ? self.set_light_on()
+        
+        # ? while self.light_is_on() is True:
+            # ? if self.can_move_left() is True:
+                # ? if self.compare_item() == -1:
+                    # ? self.swap_item()
+                # ? elif self.compare_item() is None:
+                    # ? self.swap_item()
+                # ? self.move_left()
+            # ? else:
+                # ? self.set_light_off()
+                # ? self.sort()
+        
         pass
 
 

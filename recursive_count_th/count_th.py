@@ -5,6 +5,16 @@ Your function must utilize recursion. It cannot contain any loops.
 '''
 def count_th(word):
     
-    # TBC
+    if type(word) == str:
+        char_list = list(word)
+        return 0 + count_th(char_list)
     
-    pass
+    if len(word) > 1:
+        if word[-2] == "t" and word[-1] == "h":
+            return 1 + count_th(word[:-1])
+        else:
+            return 0 + count_th(word[:-1])
+    else:
+        return 0
+
+# print(count_th("ThhthtththTh"))
